@@ -164,9 +164,47 @@
         console.log('chuc', chuc);
         var sokytu = tram + donvi + chuc
         console.log('tong cac ky so', sokytu);
-        
-        
         // cong cac kys so lai
+
+        var tenbaitap = "baitapjs"
+        tenbaitap = "baitapdemojs"
+        // khi bến đã được khơir tạo nó có thể gán giá trị nơi bằng dấu =
+        console.log('line code 201' + tenbaitap);//bai tap demo js
+        var num11 = 9;
+        // mum11 = mum11 + 3; //9+3=12
+        num11+=3;// nó tương tự như mum11+3=12
+        console.log('num11=', num11);
+        num11 = num11-3; //12-3=9
+        num11 -=3; // num11-3=12-3=9;
+        console.log('num11=', num11);
+        num11*=3;
+        console.log('num11=', num11);
+        num11/=9;
+        console.log('num11=',num11);
+        num11++; //num11+1=2+1=3
+         // có thể gọi debugger để bật chế độ debugger khi đoạn code được thuọc thi
+        var luongcoban = 20
+        var hesoluong = 10
+        var luong = luongcoban*hesoluong;
+        console.log('luong1',luong); //c1
+        luong = luongcoban;
+        luong *= hesoluong; //luongcoban*hesoluong
+        console.log('luong2',luong); //c2
+        luong = luongcoban*=hesoluong; // luong cơ bản bằng biểu thức tính toán (luongcoban*=hesoluong)//luongcoban= luongcoban*hesoluong;
+        console.log('luong3',luong); //c3
+
+        //cách khai báo hằng số => sử dụng từ khóa const trước biến cần khai báo thay vì dùn var 
+        //khi khai báo biến là hằng số thì nó không cho phép gán giá trị mới 
+        const PI=Math.PI; // Math.PI; là số pi được bởi Math
+        console.log(PI);
+        ///đang gán lại giá trị mới là 3,14 - hằng số ko gán được giá trị mới gây lỗi
+        console.log(PI);
+        const hesoluongfordev = 3;
+        const tinhluong=20*4;
+        //  hesoluongfordev = 4;//gây lỗi thì hằng số ko gán được giá trị mới => const nó ko cho phép gán giá trị mới=> gây lỗi khi thực thi đoạn code 
+        console.log(hesoluongfordev);
+
+        // const nó ko cho phép khai báo giá trị trùng (tạo biến mới) => gây lỗi trong quá trình cost và có thể nhận biết được
 
 
     </script>

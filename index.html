@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <!-- <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">Active</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Action</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Another link</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+        </ul> -->
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+
+
+    <!-- main js -->
+    <!-- nên để các file js ở dướ của body vì khi file js bị lỗi nó sẽ gây lỗi ở các đoạn code phía sau nó -->
+    <script tipe="text-javascript">
+        // output:chỉ hiển thị trên trình duyệt 
+        //console.log: giúp kiểm tra data ở data console của dev tool- chỉ hiển thị trên devtool   
+        console.log('hello');
+        console.log('1,2,3,4,5,6');
+        // giúp mình show đoạn text hoặc thẻ html lên giao diện người dùng 
+        document.write('hello 123456');
+        // khai báo biến với từ khóa là var
+        var title= "<h1>cybershop</h1>"
+        document.write('<h1>cybershop</h1>');
+        document.write('title');
+        var                   num1                    =                  10;
+        // từ khóa khai báo   tên biến            dấu gán              gía trị được gán
+        // khai báo console.log nhanh: clg giúp tạo nhanh cú pháp
+        console.log('num1');
+        var tienluong = '20000000';
+        console.log('tiền lương của A', tienluong);
+        var tenkhachhang = 'bui thi buoi';
+        var tuoikhachhang = '15';
+        var diachikhachhang = '15b/12 lê thánh tôn';
+        console.log('tên khách hàng', tenkhachhang);
+        console.log('tuổi khách hàng', tuoikhachhang);
+        console.log('địa chỉ khách hàng', diachikhachhang);
+
+        // các quy tăcs đặt tên biến
+        // 1, không bắt đầu bằng ký tự số ví dụ: var 25tuoi = 1000;
+        // 2, cần rõ nghĩa ví dụ: var tuoikhachhang = (" khách hàng A ", khachhangA);
+        // 3, sử dụng cú pháp camelcase=> ký tự chữ cái viết thường, các ký tự đầu của các ký tự sau viết hoa ví dụ: var firsname = 'Đỗ';
+        // 4, không nên khai báo một lúc nhiều biến để khi debug lỗi sẽ dễ dàng tìm kiếm lỗi hơn 
+        // ví dụ:  var num1,num2 = '3';
+        // console.log('num1,num2', num1,num2);
+
+        // kiểu dữ liệu của biến: là mặc định 
+        // 1, kiểu chuỗi sẽ nằm trong dấu ngoặc kép: " mmmmmmmm dddddd hdugequicg";
+        var chuoiString = "dgfdhgfjhgm";
+        // 2, kiểu số: 1234567;
+        var num3 = 30;
+        // không cần biết gán số gì nhưng nó nằm trong dấu ngoặc kép thì nó thành kiểu chuỗi
+        var num4 = "40";
+        console.log("num3", num3 , "num4", num4);
+        console.log('chuyển thành kiểu số',);
+        console.log('trước khi thay đổi', num4);
+        console.log('sau khi thay đổi',Number (num4));
+        // cách chuyển đơn giản chuỗi thành số - Number (tên biến/chuỗi số )
+
+        console.log("40", Number("40"));
+        console.log(typeof num4);
+        console.log(typeof num3);
+        // goi typeof |ten_bien| trong console.log de hien thi kieu du lieu cua bien 
+        
+        // kieu boolean: true, false;
+        var checkbotton = false;
+        //  kieu underfined ;
+        var hello;
+        // khi khai bao bien nhung khong gan gia tri owr thoi dien khai bao thi bien luc do co gia tri va underfined
+
+        console.log(hello);
+
+        // kieu null;
+        var cyber = null;
+        //  cac phep toan: +,-,*,/ cong.tru,nhan,chia
+        var num5 = 10;
+        var num6 = 20;
+        var sum = num5 + num6 ;
+        console.log('tong cua num5 va num6', sum);
+        var tenkhachhang2 = 'cong tang ton nu thi hoa';
+        var tuoikhachhang2 = 32;
+        var thongtinkhachhang = tenkhachhang2 + tuoikhachhang2;
+        console.log(thongtinkhachhang );
+
+        var tienluongthang10 = 20;
+        var bonutthang10 = 5;
+        var tongluongthang10 = tienluongthang10 +Number(bonutthang10) //25=>205=>25
+        console.log('tongtienluongthang10 =', tongluongthang10);
+        console.log('tongtienluongthang10 ='+ tongluongthang10);
+        console.log("hello"-"he");//llo
+        // khi tra gia tri kieemr ve NaN => ban dang co mot phep toan ko dung logic hoac sai cu phap 
+        console.log(0/10);
+        console.log(10/0);//infinity la con so ko xac dinh;
+        // cac phep toan +, -, *, / khong xu ly voi chuoi=>NaN
+        console.log(1+"1");
+        console.log("1"+1);
+        console.log("123 123"+1);
+        // typeof "11 11" => neu la chuoi thi thong bao khong xu ly duoc phep toan 
+                        //    neu la Number thi cho phep xu ly tinh toan
+        // phep chia (chia lay nguyen va chia lay du )
+        var num7 = 10/5;//2
+        var num8 = 10/3;//3,33
+        console.log("num 7=", num7);
+        console.log('num 8=', num8);
+
+        // 109 = 1+0+9 = 10;
+        // 109 chi lay du de lay 9;
+        var num9 = 109%100; //9
+        console.log("num9",num9);
+         var num10 = 234;
+        //  tinh tong cac ky so cua num10;
+        // tim cac kys so
+        var tram = Math.floor(num10/100);
+        var donvi = num10%10;
+        var chuc = (num10%100 - num10%10)/10;
+        console.log('tram',tram);
+        console.log('donvi',donvi);
+        console.log('chuc', chuc);
+        var sokytu = tram + donvi + chuc
+        console.log('tong cac ky so', sokytu);
+        
+        
+        // cong cac kys so lai
+
+
+    </script>
+
+
+</body>
+
+</html>

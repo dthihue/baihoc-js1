@@ -14,6 +14,28 @@
 </head>
 
 <body>
+    <h1 id="luongve"></h1>    
+    <h2 id="h2" class="dafshgj">hello cyber soft</h2>
+    
+    <input id="inputID" type="text" placeholder="nhập nội dung" value="dangthihue97">
+     <!-- c1 -->
+    <button id="button" class="btn btn-success">login</button>
+    <!-- c2 -->
+    <button onclick="laygiatriInput()" class="btn btn-primary">Load</button>
+    <!-- <input type="text" placeholder="loging username"> -->
+    <!-- <img src="./img/anh-binh-minh-1.jpg" alt=""> -->
+    <img id="image" src="https://picsum.photos/id/10/500/400" alt="đây là hình ảnh trước thay đổi của tôi">
+
+    <!-- Demo bài tập bật tắt đèn -->
+    <div class="d-flex">
+        <button id="batden">Bật Đèn</button>
+        <img id="imgden" src="./img/pic_bulboff.gif" alt="" class="">
+        <button id="tatden">Tắt Đèn</button>
+    </div>
+
+
+
+
     <header>
         <!-- place navbar here -->
         <!-- <ul class="nav justify-content-center">
@@ -61,26 +83,26 @@
     <script tipe="text-javascript">
         // output:chỉ hiển thị trên trình duyệt 
         //console.log: giúp kiểm tra data ở data console của dev tool- chỉ hiển thị trên devtool   
-        console.log('hello');
-        console.log('1,2,3,4,5,6');
-        // giúp mình show đoạn text hoặc thẻ html lên giao diện người dùng 
-        document.write('hello 123456');
-        // khai báo biến với từ khóa là var
-        var title= "<h1>cybershop</h1>"
-        document.write('<h1>cybershop</h1>');
-        document.write('title');
-        var                   num1                    =                  10;
+        // console.log('hello');
+        // console.log('1,2,3,4,5,6');
+        // // giúp mình show đoạn text hoặc thẻ html lên giao diện người dùng 
+        // document.write('hello 123456');
+        // // khai báo biến với từ khóa là var
+        // var title = "<h1>cybershop</h1>"
+        // document.write('<h1>cybershop</h1>');
+        // document.write('title');
+        // var num1 = 10;
         // từ khóa khai báo   tên biến            dấu gán              gía trị được gán
         // khai báo console.log nhanh: clg giúp tạo nhanh cú pháp
-        console.log('num1');
-        var tienluong = '20000000';
-        console.log('tiền lương của A', tienluong);
-        var tenkhachhang = 'bui thi buoi';
-        var tuoikhachhang = '15';
-        var diachikhachhang = '15b/12 lê thánh tôn';
-        console.log('tên khách hàng', tenkhachhang);
-        console.log('tuổi khách hàng', tuoikhachhang);
-        console.log('địa chỉ khách hàng', diachikhachhang);
+        // console.log('num1');
+        // var tienluong = '20000000';
+        // console.log('tiền lương của A', tienluong);
+        // var tenkhachhang = 'bui thi buoi';
+        // var tuoikhachhang = '15';
+        // var diachikhachhang = '15b/12 lê thánh tôn';
+        // console.log('tên khách hàng', tenkhachhang);
+        // console.log('tuổi khách hàng', tuoikhachhang);
+        // console.log('địa chỉ khách hàng', diachikhachhang);
 
         // các quy tăcs đặt tên biến
         // 1, không bắt đầu bằng ký tự số ví dụ: var 25tuoi = 1000;
@@ -97,17 +119,17 @@
         var num3 = 30;
         // không cần biết gán số gì nhưng nó nằm trong dấu ngoặc kép thì nó thành kiểu chuỗi
         var num4 = "40";
-        console.log("num3", num3 , "num4", num4);
+        console.log("num3", num3, "num4", num4);
         console.log('chuyển thành kiểu số',);
         console.log('trước khi thay đổi', num4);
-        console.log('sau khi thay đổi',Number (num4));
+        console.log('sau khi thay đổi', Number(num4));
         // cách chuyển đơn giản chuỗi thành số - Number (tên biến/chuỗi số )
 
         console.log("40", Number("40"));
         console.log(typeof num4);
         console.log(typeof num3);
         // goi typeof |ten_bien| trong console.log de hien thi kieu du lieu cua bien 
-        
+
         // kieu boolean: true, false;
         var checkbotton = false;
         //  kieu underfined ;
@@ -121,46 +143,46 @@
         //  cac phep toan: +,-,*,/ cong.tru,nhan,chia
         var num5 = 10;
         var num6 = 20;
-        var sum = num5 + num6 ;
+        var sum = num5 + num6;
         console.log('tong cua num5 va num6', sum);
         var tenkhachhang2 = 'cong tang ton nu thi hoa';
         var tuoikhachhang2 = 32;
         var thongtinkhachhang = tenkhachhang2 + tuoikhachhang2;
-        console.log(thongtinkhachhang );
+        console.log(thongtinkhachhang);
 
         var tienluongthang10 = 20;
         var bonutthang10 = 5;
-        var tongluongthang10 = tienluongthang10 +Number(bonutthang10) //25=>205=>25
+        var tongluongthang10 = tienluongthang10 + Number(bonutthang10) //25=>205=>25
         console.log('tongtienluongthang10 =', tongluongthang10);
-        console.log('tongtienluongthang10 ='+ tongluongthang10);
-        console.log("hello"-"he");//llo
+        console.log('tongtienluongthang10 =' + tongluongthang10);
+        console.log("hello" - "he");//llo
         // khi tra gia tri kieemr ve NaN => ban dang co mot phep toan ko dung logic hoac sai cu phap 
-        console.log(0/10);
-        console.log(10/0);//infinity la con so ko xac dinh;
+        console.log(0 / 10);
+        console.log(10 / 0);//infinity la con so ko xac dinh;
         // cac phep toan +, -, *, / khong xu ly voi chuoi=>NaN
-        console.log(1+"1");
-        console.log("1"+1);
-        console.log("123 123"+1);
+        console.log(1 + "1");
+        console.log("1" + 1);
+        console.log("123 123" + 1);
         // typeof "11 11" => neu la chuoi thi thong bao khong xu ly duoc phep toan 
-                        //    neu la Number thi cho phep xu ly tinh toan
+        //    neu la Number thi cho phep xu ly tinh toan
         // phep chia (chia lay nguyen va chia lay du )
-        var num7 = 10/5;//2
-        var num8 = 10/3;//3,33
+        var num7 = 10 / 5;//2
+        var num8 = 10 / 3;//3,33
         console.log("num 7=", num7);
         console.log('num 8=', num8);
 
         // 109 = 1+0+9 = 10;
         // 109 chi lay du de lay 9;
-        var num9 = 109%100; //9
-        console.log("num9",num9);
-         var num10 = 234;
+        var num9 = 109 % 100; //9
+        console.log("num9", num9);
+        var num10 = 234;
         //  tinh tong cac ky so cua num10;
         // tim cac kys so
-        var tram = Math.floor(num10/100);
-        var donvi = num10%10;
-        var chuc = (num10%100 - num10%10)/10;
-        console.log('tram',tram);
-        console.log('donvi',donvi);
+        var tram = Math.floor(num10 / 100);
+        var donvi = num10 % 10;
+        var chuc = (num10 % 100 - num10 % 10) / 10;
+        console.log('tram', tram);
+        console.log('donvi', donvi);
         console.log('chuc', chuc);
         var sokytu = tram + donvi + chuc
         console.log('tong cac ky so', sokytu);
@@ -172,44 +194,151 @@
         console.log('line code 201' + tenbaitap);//bai tap demo js
         var num11 = 9;
         // mum11 = mum11 + 3; //9+3=12
-        num11+=3;// nó tương tự như mum11+3=12
+        num11 += 3;// nó tương tự như mum11+3=12
         console.log('num11=', num11);
-        num11 = num11-3; //12-3=9
-        num11 -=3; // num11-3=12-3=9;
+        num11 = num11 - 3; //12-3=9
+        num11 -= 3; // num11-3=12-3=9;
         console.log('num11=', num11);
-        num11*=3;
+        num11 *= 3;
         console.log('num11=', num11);
-        num11/=9;
-        console.log('num11=',num11);
+        num11 /= 9;
+        console.log('num11=', num11);
         num11++; //num11+1=2+1=3
-         // có thể gọi debugger để bật chế độ debugger khi đoạn code được thuọc thi
+        // có thể gọi debugger để bật chế độ debugger khi đoạn code được thuọc thi
         var luongcoban = 20
         var hesoluong = 10
-        var luong = luongcoban*hesoluong;
-        console.log('luong1',luong); //c1
+        var luong = luongcoban * hesoluong;
+        console.log('luong1', luong); //c1
         luong = luongcoban;
         luong *= hesoluong; //luongcoban*hesoluong
-        console.log('luong2',luong); //c2
-        luong = luongcoban*=hesoluong; // luong cơ bản bằng biểu thức tính toán (luongcoban*=hesoluong)//luongcoban= luongcoban*hesoluong;
-        console.log('luong3',luong); //c3
+        console.log('luong2', luong); //c2
+        luong = luongcoban *= hesoluong; // luong cơ bản bằng biểu thức tính toán (luongcoban*=hesoluong)//luongcoban= luongcoban*hesoluong;
+        console.log('luong3', luong); //c3
 
         //cách khai báo hằng số => sử dụng từ khóa const trước biến cần khai báo thay vì dùn var 
         //khi khai báo biến là hằng số thì nó không cho phép gán giá trị mới 
-        const PI=Math.PI; // Math.PI; là số pi được bởi Math
-        console.log(PI);
-        ///đang gán lại giá trị mới là 3,14 - hằng số ko gán được giá trị mới gây lỗi
-        console.log(PI);
-        const hesoluongfordev = 3;
-        const tinhluong=20*4;
-        //  hesoluongfordev = 4;//gây lỗi thì hằng số ko gán được giá trị mới => const nó ko cho phép gán giá trị mới=> gây lỗi khi thực thi đoạn code 
-        console.log(hesoluongfordev);
+        // const PI=Math.PI; // Math.PI; là số pi được bởi Math
+        // console.log(PI);
 
+        // var luong = 10;
+        // console.log(luong);
+        // ///đang gán lại giá trị mới là 3,14 - hằng số ko gán được giá trị mới gây lỗi
+        // console.log(PI);
+        // const hesoluongfordev = 3;
+        // const tinhluong=20*4;
+        // //  hesoluongfordev = 4;//gây lỗi thì hằng số ko gán được giá trị mới => const nó ko cho phép gán giá trị mới=> gây lỗi khi thực thi đoạn code 
+        // console.log(hesoluongfordev);
         // const nó ko cho phép khai báo giá trị trùng (tạo biến mới) => gây lỗi trong quá trình cost và có thể nhận biết được
+
+        // const luongthang10 = 2000000;
+        // // luongthang10 = 100000;
+        // console.log(Luongthang10);
+        // const pi = 3.14;
+
+        // tinh canh huyen cua 1 tam giac vuong khi cac ban biet gia tri hai canh goc vuong kia.
+        //ap dung mo hinh 3 kho:
+        /*
+        khoi 1: input- du lieu dau vao
+           canh1:
+           canh2:
+        khoi 2: progress cac buoc xu ly
+        tinh cach de tinh canh huyen=>su dung putago=>canh huyen=tong binh quan 2 canh goc vuong
+        -tinh binh phuong canh 1
+        -tinh binh phuong canh con lai
+        - tong binh phuong 2 canh
+        -can bac 2 cua tong de lay gia tri canh huyen
+        khoi 3: output: du lieu dau ra
+        canhhuyen
+
+        */
+        // khai bao canh 1
+        var canh1 = 3;
+        var canh2 = 4;
+        // khai bao canh 2
+        var BPcanh1 = canh1 * canh1;
+        console.log('BPcanh1=', BPcanh1);
+        var BPcanh2 = canh2 * canh2;
+        console.log('BPcanh2=', BPcanh2);
+        // tinh tong bp 2 canh
+        var sumBP2canh = BPcanh1 * BPcanh2;
+        console.log('sumBP2canh=', sumBP2canh);
+        //Math.sqrt dung de can bac 2 gia tri ben trong 
+        var canhHuyen = Math.sqrt(sumBP2canh);
+        console.log('canhHuyen=', canhHuyen); //5 
+
+        // khoi 1: cac gia tri dau vao
+        var tenphim = 23543;
+        var giavenguoilon = 20000;
+        var giavetreEm = 10000;
+        var sovenguoilon = 10;
+        var sovetreEm = 5;
+        var hesochotuthien = 10;
+        //  khoi 2: cac buoc thuc hien
+        // tinh so tien ban ve nguoi lon
+        var sotienbanvenguoilon = giavenguoilon * sovenguoilon;
+        // console.log('tong tien ban ve nguoi lon', sotienbanvenguoilon);
+
+        // tinh so tien ban ve tre em
+        var sotienbanvetreem = giavetreEm * sovetreEm;
+        // console.log('tong tien ban ve tre em', sotienbanvetreem);
+
+        // tinh tong doanh thu thuc = so tien ban ve nguoi lon + tien ban ve tre em
+        var tongdoanhthuthuc = sotienbanvenguoilon + sotienbanvetreem;
+        // console.log('tong doanh thu thuc=', tongdoanhthuthuc);
+
+        // tien quyen gop = tong doanh thu thuc * he so cho tu thien /100
+        var tienquyengop = tongdoanhthuthuc * hesochotuthien / 100;
+        // console.log('tien quyen gop=', tienquyengop);
+
+        //tien lai con lai = tong doanh thu thuc - tien quyen gop
+        tienlaiconlai = tongdoanhthuthuc - tienquyengop;
+        // console.log('tien lai con lai=', tienlaiconlai);
+
+        // khoi 3: 
+        // -tinh so tien quyen gop
+        console.log(tienquyengop)
+        // -tien lai con lai
+        console.log(tienlaiconlai)
+
+        var count = 0;
+        count++;
+        // nho boi den ky tu hoac bien can log: ctrl + alt + l
+        console.log("🚀 ~ file: index.html:286 ~ count:", count)
+
+        // var a = 9;// --a=7
+        // var b = 10;//--b= 8
+        // var c = --b;// 9 and 9 dau -- nam truoc gia tri thi khi gan thi se thuc hien viec giam gia tri truoc khi gan
+        // var d = b--;// 9 and 8 -- nam sau gia tri thi no se gan gia tri truoc khi no thuc hien viec giam gia tri 
+        // var e = --a + a--;// =16 vi 8+8= 16
+        // // ket qua a
+        // console.log('a',a)
+        // // ket qua b
+        // console.log('b',b)
+        // // ket qua c
+        // console.log('c',c)
+        // // ket qua d
+        // console.log('d',d)
+        // // ket qua e
+        // console.log('e',e)
+
+        // var a = 4;
+        // var b = 10;
+        // a += b-- * a;
+        // b -= 2 + ++a;
+        // //a=? a= 4+(10*4)=45
+        // console.log('a', a);
+        // //b=? b= 9-(2*45)=-38
+        // console.log('b', b);
+
+
+
+
+
 
 
     </script>
 
-
+    <script src="./js/buoi2.js"></script>
 </body>
 
 </html>
